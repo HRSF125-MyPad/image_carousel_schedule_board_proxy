@@ -7,7 +7,6 @@ app.use(express.json());
 app.use(express.static(__dirname + '/public/'))
 
 app.get('/image', (req, res) => {
-    // console.log(req.url)
     axios.get(`http://localhost:3002${req.url}`)
       .then((response) => {
         // console.log(response.data)
@@ -21,7 +20,7 @@ app.get('/image', (req, res) => {
 app.get('/homes', (req, res) => {
     axios.get(`http://localhost:3001/homes`)
     .then((response) => {
-        console.log(response.data)
+        // console.log(response.data)
         res.send(response.data)
     })
     .catch((error) => {
@@ -38,4 +37,15 @@ app.get('/bank', (req, res) => {
         res.send(error)
     })
 })
+
+app.get('/images', (req, res) => {
+    axios.get('http://localhost:3004/images')
+    .then((response) => {
+        res.send(response.data)
+    })
+    .catch((error) => {
+        res.send(error)
+    })
+})
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

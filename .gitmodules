@@ -1,0 +1,15 @@
+[submodule "image-carousel-from-static-map"]
+	path = image-carousel-from-static-map
+	url = https://github.com/garvintan07/image-carousel-from-static-map
+[submodule "calculator_menu_proxy"]
+	path = calculator_menu_proxy
+	url = https://github.com/garvintan07/calculator_menu_proxy
+[submodule "calculator_menu_module"]
+	path = calculator_menu_module
+	url = https://github.com/garvintan07/calculator_menu_module
+[submodule "image_carousel_schedule_board_module"]
+	path = image_carousel_schedule_board_module
+	url = https://github.com/garvintan07/image_carousel_schedule_board_module
+[submodule "estimate_graph_module"]
+	path = estimate_graph_module
+	url = https://github.com/garvintan07/estimate_graph_module
